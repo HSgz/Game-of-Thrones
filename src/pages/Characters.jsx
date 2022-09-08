@@ -8,7 +8,7 @@ const Characters = () => {
   const characters = useGetCharacters(URL).slice(0,52);
   return (
     <Layout>
-      <div className="grid h-56 grid-cols-4 gap-4 sm:h-64 xl:h-80 2xl:h-96 my-10">
+      <div className="grid h-56 md:grid-cols-4 sm:grid-cols-2 gap-4 sm:h-64 xl:h-80 2xl:h-96 my-10">
         {characters.map((character) => (
           <div
             key={character.id}
