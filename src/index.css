@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face{
+      font-family: "GameofThrones";
+      src: url('dist/font/gameofthrones.ttf');
+      font-weight: normal;
+      font-style: normal;
+    }
+  
+    @font-face{
+      font-family: "Cinzel";
+      src: url('dist/font/Cinzel-VariableFont_wght.ttf');
+      font-weight: normal;
+      font-style: normal;
+    }
+  
+    body {
+      font-family: "GameofThrones";
+    }
+}
+
+@layer components {
+    .text-description {
+        font-family: Cinzel;
+    }
+}
